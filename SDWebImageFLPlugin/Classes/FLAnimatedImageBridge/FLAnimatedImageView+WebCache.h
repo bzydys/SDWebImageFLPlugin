@@ -30,7 +30,7 @@
  *
  * @param url The url for the image.
  */
-- (void)sd_setImageWithURL:(nullable NSURL *)url NS_REFINED_FOR_SWIFT;
+- (void)fl_setImageWithURL:(nullable NSURL *)url NS_REFINED_FOR_SWIFT;
 
 /**
  * Load the image at the given url (either from cache or download) and load it in this imageView. It works with both static and dynamic images
@@ -40,7 +40,7 @@
  * @param url         The url for the image.
  * @param placeholder The image to be set initially, until the image request finishes.
  */
-- (void)sd_setImageWithURL:(nullable NSURL *)url
+- (void)fl_setImageWithURL:(nullable NSURL *)url
           placeholderImage:(nullable UIImage *)placeholder NS_REFINED_FOR_SWIFT;
 
 /**
@@ -52,7 +52,7 @@
  *  @param placeholder The image to be set initially, until the image request finishes.
  *  @param options     The options to use when downloading the image. @see SDWebImageOptions for the possible values.
  */
-- (void)sd_setImageWithURL:(nullable NSURL *)url
+- (void)fl_setImageWithURL:(nullable NSURL *)url
           placeholderImage:(nullable UIImage *)placeholder
                    options:(SDWebImageOptions)options NS_REFINED_FOR_SWIFT;
 
@@ -66,7 +66,7 @@
  * @param options     The options to use when downloading the image. @see SDWebImageOptions for the possible values.
  * @param context     A context contains different options to perform specify changes or processes, see `SDWebImageContextOption`. This hold the extra objects which `options` enum can not hold.
  */
-- (void)sd_setImageWithURL:(nullable NSURL *)url
+- (void)fl_setImageWithURL:(nullable NSURL *)url
           placeholderImage:(nullable UIImage *)placeholder
                    options:(SDWebImageOptions)options
                    context:(nullable SDWebImageContext *)context;
@@ -82,7 +82,7 @@
  *                        indicating if the image was retrieved from the local cache or from the network.
  *                        The fourth parameter is the original image url.
  */
-- (void)sd_setImageWithURL:(nullable NSURL *)url
+- (void)fl_setImageWithURL:(nullable NSURL *)url
                  completed:(nullable SDExternalCompletionBlock)completedBlock;
 
 /**
@@ -98,7 +98,7 @@
  *                        indicating if the image was retrieved from the local cache or from the network.
  *                        The fourth parameter is the original image url.
  */
-- (void)sd_setImageWithURL:(nullable NSURL *)url
+- (void)fl_setImageWithURL:(nullable NSURL *)url
           placeholderImage:(nullable UIImage *)placeholder
                  completed:(nullable SDExternalCompletionBlock)completedBlock NS_REFINED_FOR_SWIFT;
 
@@ -116,7 +116,7 @@
  *                        indicating if the image was retrieved from the local cache or from the network.
  *                        The fourth parameter is the original image url.
  */
-- (void)sd_setImageWithURL:(nullable NSURL *)url
+- (void)fl_setImageWithURL:(nullable NSURL *)url
           placeholderImage:(nullable UIImage *)placeholder
                    options:(SDWebImageOptions)options
                  completed:(nullable SDExternalCompletionBlock)completedBlock;
@@ -137,7 +137,7 @@
  *                        indicating if the image was retrieved from the local cache or from the network.
  *                        The fourth parameter is the original image url.
  */
-- (void)sd_setImageWithURL:(nullable NSURL *)url
+- (void)fl_setImageWithURL:(nullable NSURL *)url
           placeholderImage:(nullable UIImage *)placeholder
                    options:(SDWebImageOptions)options
                   progress:(nullable SDImageLoaderProgressBlock)progressBlock
@@ -160,7 +160,7 @@
  *                       indicating if the image was retrieved from the local cache or from the network.
  *                       The fourth parameter is the original image url.
  */
-- (void)sd_setImageWithURL:(nullable NSURL *)url
+- (void)fl_setImageWithURL:(nullable NSURL *)url
           placeholderImage:(nullable UIImage *)placeholder
                    options:(SDWebImageOptions)options
                    context:(nullable SDWebImageContext *)context
