@@ -18,7 +18,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/SDWebImage/SDWebImage.git",
-            from: "5.15.0"
+            from: "5.10.0"
         ),
         .package(
             url: "https://github.com/Flipboard/FLAnimatedImage.git",
@@ -33,7 +33,11 @@ let package = Package(
             dependencies: ["SDWebImage", "FLAnimatedImage"],
             path: ".",
             sources: ["Classes/FLAnimatedImageBridge"],
-            publicHeadersPath: "Classes/FLAnimatedImageBridge"
+            publicHeadersPath: "Classes/FLAnimatedImageBridge",
+            cSettings: [
+                .headerSearchPath("Classes/FLAnimatedImageBridge")
+            ]
+
         )
     ]
 )
