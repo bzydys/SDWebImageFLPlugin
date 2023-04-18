@@ -32,7 +32,8 @@ let package = Package(
             name: "SDWebImageFLPlugin",
             dependencies: ["SDWebImage", "FLAnimatedImage"],
             path: ".",
-            sources: ["Classes/FLAnimatedImageBridge"]
+            sources: ["Classes/FLAnimatedImageBridge"],
+            publicHeadersPath: "Classes/FLAnimatedImageBridge"
         )
     ]
 )
