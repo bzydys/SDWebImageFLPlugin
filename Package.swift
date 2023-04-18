@@ -26,18 +26,19 @@ let package = Package(
         )
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
+        // Targets are the basic building blocks of a package. A target can define a module or a
+        // test suite.
+        // Targets can depend on other targets in this package, and on products in packages which
+        // this package depends on.
         .target(
             name: "SDWebImageFLPlugin",
             dependencies: ["SDWebImage", "FLAnimatedImage"],
-            path: ".",
-            sources: ["Classes", "Module"],
+            path: "SDWebImageFLPlugin",
+            sources: ["Classes/FLAnimatedImageBridge"],
             publicHeadersPath: "Module",
             cSettings: [
-                .headerSearchPath("Module")
+                .headerSearchPath("Module"),
             ]
-
-        )
+        ),
     ]
 )
